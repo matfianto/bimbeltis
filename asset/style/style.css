@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*navbar*/
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 2em;
+}
+
+.btn-nav {
+  padding: 8px 8px;
+  color: white;
+  display: inline-block;
+  border-radius: 45px;
+  text-align: center;
+}
+
+.login {
+  background-color: rgb(0, 68, 179);
+  cursor: pointer;
+  box-shadow: 0 2px rgb(0, 27, 71);
+}
+
+.login:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+header nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #1C1F32;
+  opacity: 0.9;
+  justify-content: space-around;
+  padding: 20px 0;
+  height: 50px;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  z-index: 9999;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-evenly;
+}
+
+header nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+header nav ul li a:hover {
+  color: rgb(248, 201, 170);
+}
+
+/* Hambyrge Menu */
+
+.menu-toogle {
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu-toogle input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.menu-toogle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation */
+
+.menu-toogle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+
+.menu-toogle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toogle input:checked ~ span:nth-child(2) {
+  background-color: white;
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) {
+  background-color: white;
+  transform: rotate(-45deg) translate(-1px, 0px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+/* top-main */
+
+.top-main {
+  padding: 190px 0;
+  background: rgba(0, 0, 0, 0.5) url("/asset/image/bg-header.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-main h1 {
+  font-size: 5.5em;
+  margin: -20px;
+}
+
+.top-main h2 {
+  margin: 10px;
+  font-size: 2em;
+}
+
+.top-main p {
+  margin: 10px;
+  font-size: 1em;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Content */
+
+.content {
+  margin: 50px 0 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+}
+
+.head-content{
+  margin: 0 0 100px 0;
+}
+
+.love {
+  color: rgb(179, 0, 0);
+}
+
+.product-icon p{
+  font-size:1em;
+  padding: 2px 2px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.product-icon img{
+  width:200px;
+  height:auto;
+}
+
+.box {
+  float: left;
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 7pt -4pt #1C1F32;
+}
+
+.box p{
+  margin: 5px 0;
+}
+
+.clear {
+  clear: left;
+}
+
+#SD{
+  background-color: rgb(161, 0, 8);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(83, 0, 5);
+}
+
+#SD:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#SMP{
+  background-color: rgb(56, 36, 240);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(19, 10, 105);
+}
+
+#SMP:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#SMA{
+  background-color: rgb(10, 109, 155);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(4, 65, 94);
+}
+
+#SMA:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#B1{
+  background-color: rgb(34, 167, 1);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(19, 94, 0);
+}
+
+#B1:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#B2{
+  background-color: rgb(189, 186, 6);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(105, 104, 0);
+}
+
+#B2:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#B3{
+  background-color: rgb(11, 188, 194);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(0, 113, 117);
+}
+
+#B3:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#coding1{
+  background-color: rgb(106, 0, 148);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(67, 0, 94);
+}
+
+#coding1:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+#coding2{
+  background-color: rgb(216, 104, 0);
+  cursor: pointer;
+  box-shadow: 0 5px rgb(102, 49, 0);
+}
+
+#coding2:active {
+  position: relative;
+  top: 5px;
+  box-shadow: none;
+}
+
+.end-content{
+  margin: 150px 0 10px 0;
+}
+
+.donasi {
+  font-size:1em;
+  padding: 4px 4px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 45px;
+  text-align: center;
+  background-color: rgb(0, 112, 9);
+  cursor: pointer;
+  box-shadow: 0 6px rgb(0, 65, 5);
+}
+
+.donasi:active {
+  position: relative;
+  top: 6px;
+  box-shadow: none;
+}
+
+/* aside/profile */
+
+.profile-card {
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact {
+  margin: 10px 0 20px 0;
+  padding: 8px 8px;
+  display: inline-block;
+  border-radius: 45px;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+  box-shadow: 0 2px rgb(51, 51, 51);
+}
+
+.contact:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+  
+.contact a {
+    text-decoration: none;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+  }
+
+/* Footer */
+
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  color: white;
+  background-color: #1C1F32;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Responsive Breakpoint*/
+
+/* Tablet */
+
+@media screen and (max-width: 768px) {
+  header nav ul {
+    width: 50%;
+  }
+
+  .box {
+    width: 50%;
+  }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+  .menu-toogle {
+    display: flex;
+  }
+
+  header nav ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C1F32;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  header nav ul.slide {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  .box {
+    width: 100%;
+  }
+}
